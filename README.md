@@ -32,8 +32,8 @@ copilot env deploy --name prod
 ```
 4. deploy the service
 ```shell
-copilot deploy --name dev
-copilot deploy --name prod
+copilot deploy --env dev
+copilot deploy --env prod
 ```
 
 ## Cleanup
