@@ -7,7 +7,7 @@ const app = new Hono();
 app.use(logger());
 
 app.get("/", (c) => {
-  return c.json({ message: "Hello world!" });
+  return c.json({ message: "Hello AWS!" });
 });
 
 const port = 3000;
