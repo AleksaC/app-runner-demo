@@ -1,0 +1,20 @@
+Parameters:
+  App:
+    Type: String
+  Env:
+    Type: String
+
+Conditions:
+  IsProd: !Equals
+    - !Ref Env
+    - prod
+
+Resources:
+  AutoScalingConfig:
+    Type: AWS::AppRunner::AutoScalingConfiguration
+    Condition: IsProd
+    Properties:
+      AutoScalingConfigurationName: !Sub '${App}-${Env}-ha'
+      MaxConcurrency: 100
+      MaxSize: 25
+      MinSize: 2
