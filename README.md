@@ -1,7 +1,8 @@
 # AppRunner Demo
 
 Example app demonstrating AWS AppRunner deployment both from source code as well
-as container image. This was presented in a meetup of AWS User Group Montenegro.
+as container image. This was presented in a [meetup](https://www.youtube.com/watch?v=2S9j-_SqBus)
+of AWS User Group Montenegro.
 
 ## Prerequisites
 
